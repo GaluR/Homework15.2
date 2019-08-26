@@ -4,15 +4,15 @@ public class Vehicle {
     private String model;
     private int date;
     private int course;
-    private String VINNumber;
+    private String VIN;
 
-    public Vehicle(String type, String mark, String model, int date, int course, String VINNumber) {
+    public Vehicle(String type, String mark, String model, int date, int course, String VIN) {
         this.type = type;
         this.mark = mark;
         this.model = model;
         this.date = date;
         this.course = course;
-        this.VINNumber = VINNumber;
+        this.VIN = VIN;
     }
 
     public Vehicle() {
@@ -58,12 +58,12 @@ public class Vehicle {
         this.course = course;
     }
 
-    public String getVINNumber() {
-        return VINNumber;
+    public String getVIN() {
+        return VIN;
     }
 
-    public void setVINNumber(String VINNumber) {
-        this.VINNumber = VINNumber;
+    public void setVIN(String VIN) {
+        this.VIN = VIN;
     }
 
     @Override
@@ -74,7 +74,7 @@ public class Vehicle {
                 ", model='" + model + '\'' +
                 ", date=" + date +
                 ", course=" + course +
-                ", VINNumber='" + VINNumber + '\'' +
+                ", VINNumber='" + VIN + '\'' +
                 '}';
     }
 }
